@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWP_Tree_Canvas", "UWP_Tree_Canvas\UWP_Tree_Canvas.csproj", "{6DC4F121-BFBE-4C69-848A-134617433D7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|ARM.Build.0 = Debug|ARM
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|ARM64.Build.0 = Debug|ARM64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|x64.ActiveCfg = Debug|x64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|x64.Build.0 = Debug|x64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|x64.Deploy.0 = Debug|x64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|x86.ActiveCfg = Debug|x86
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|x86.Build.0 = Debug|x86
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Debug|x86.Deploy.0 = Debug|x86
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|ARM.ActiveCfg = Release|ARM
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|ARM.Build.0 = Release|ARM
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|ARM.Deploy.0 = Release|ARM
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|ARM64.ActiveCfg = Release|ARM64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|ARM64.Build.0 = Release|ARM64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|ARM64.Deploy.0 = Release|ARM64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|x64.ActiveCfg = Release|x64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|x64.Build.0 = Release|x64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|x64.Deploy.0 = Release|x64
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|x86.ActiveCfg = Release|x86
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|x86.Build.0 = Release|x86
+		{6DC4F121-BFBE-4C69-848A-134617433D7C}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1424F60-9105-42D2-8A64-A8F2EC65C72B}
+	EndGlobalSection
+EndGlobal

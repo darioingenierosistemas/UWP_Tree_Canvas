@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.UI.Core;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
+
+namespace UWP_Tree_Canvas.Base
+{
+    public class PageBase : Page
+    {
+        private ViewModelBase _viewModel;
+
+        private Frame _splitViewFrame;
+        public Frame SplitViewFrame
+        {
+            get { return _splitViewFrame; }
+            set
+            {
+                _splitViewFrame = value;
+                if (_viewModel == null)
+                    _viewModel = (ViewModelBase)this.DataContext;
+
+                _viewModel.SetSplitViewFrame(_splitViewFrame);
+            }
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            _viewModel = (ViewModelBase)this.DataContext;
+            _viewModel.SetAppFrame(this.Frame);
+            _viewModel.OnNavigatedTo(e);
+
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PageBase_BackRequested;
+        }
+
+        private void PageBase_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame != null)
+            {
+                if (Frame.CanGoBack)
+                {
+                    e.Handled = true;
+                    Frame.GoBack();
+                }
+            }
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            _viewModel.OnNavigatedFrom(e);
+        }
+    }
+}
