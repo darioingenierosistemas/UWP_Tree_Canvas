@@ -12,49 +12,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     DataContext="{Binding Source={StaticResource Locator}, Path=TreesUwpViewModel}">
 
-
-    <base:PageBase.Resources>
-        <locals:TreesUwpViewModel x:Key="TreesUwpViewModel" x:Name="TreesUwpViewModel"/>
-        <DataTemplate x:Key="FolderTemplate" x:DataType="locals:ExplorerItem">
-            <TreeViewItem
-                 AutomationProperties.Name="{x:Bind Name}"
-                 IsExpanded="{x:Bind IsExpanded,Mode=TwoWay}"
-                 IsSelected="{x:Bind IsSelected,Mode=TwoWay}"
-                 ItemsSource="{x:Bind Children}"
-                 >
-
-                <StackPanel Orientation="Horizontal">
-                    <Image Width="20" Source="../Assets/usuarios.png" />
-                    <TextBlock Margin="0,0,10,0" />
-                    <TextBlock Text="{x:Bind Name}" />
-                </StackPanel>
-            </TreeViewItem>
-        </DataTemplate>
-
-        <DataTemplate x:Key="FileTemplate" x:DataType="locals:ExplorerItem">
-            <TreeViewItem AutomationProperties.Name="{x:Bind Name}" IsSelected="{x:Bind IsSelected,Mode=TwoWay}">
-
-                <StackPanel Orientation="Horizontal">
-                    <Image Width="20" Source="../Assets/maps-and-location.png" />
-                    <TextBlock Margin="0,0,10,0" />
-                    <TextBlock Text="{x:Bind Name}" />
-                </StackPanel>
-            </TreeViewItem>
-        </DataTemplate>
-
-        <locals:ExplorerItemTemplateSelector
-             x:Key="ExpolrerItemTemplateSelector"
-             FileTemplate="{StaticResource FileTemplate}"
-             FolderTemplate="{StaticResource FolderTemplate}"
-             />
-
-    </base:PageBase.Resources>
     <Grid>
         <muxc:TreeView x:Name="treeViewUsers"   
-                 HorizontalAlignment="Center"
+                 HorizontalAlignment="Left"
                  VerticalAlignment="Top"
-                 ItemTemplateSelector="{StaticResource ExpolrerItemTemplateSelector}"
-                 ItemsSource="{x:Bind Path=TreesUwpViewModel.DataSourceTreeView}" >
+                 Background="Gray" >
         </muxc:TreeView>
     </Grid>
 </base:PageBase>
