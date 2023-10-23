@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Base\Users.cs" />
     <Compile Include="Base\DelegateCommand.cs" />
     <Compile Include="Base\DelegateCommandAsync.cs" />
     <Compile Include="Base\PageBase.cs" />
@@ -144,6 +145,9 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\edificio-de-oficinas.png" />
+    <Content Include="Assets\maps-and-location.png" />
+    <Content Include="Assets\usuario.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -160,19 +164,23 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm">
+      <Version>8.2.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.UI.Xaml">
       <Version>2.8.5</Version>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
     <PackageReference Include="Unity">
       <Version>5.11.10</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Views\CanvasUwpView.xaml">
       <SubType>Designer</SubType>

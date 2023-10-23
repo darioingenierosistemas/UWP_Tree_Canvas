@@ -22,5 +22,7 @@ namespace UWP_Tree_Canvas.Base
         }
 
         public MainViewModel MainViewModel => _container.Resolve<MainViewModel>();
+        public TreesUwpViewModel TreesUwpViewModel => _container.Resolve<TreesUwpViewModel>();
+        public CanvasUwpViewModel CanvasUwpViewModel => _container.Resolve<CanvasUwpViewModel>();
     }
 }
